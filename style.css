@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* common parts  */
+
+.heading {
+  color: black;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.text {
+  color: #00000099;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* nav-bar section  */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav > h3 {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Lobster;
+}
+
+nav > h3 > span {
+  color: #ff7426;
+}
+
+nav > ul {
+  display: flex;
+  gap: 60px;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li > a {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-social {
+  display: flex;
+  gap: 30px;
+}
+
+/* Responsive section  */
+
+@media screen and (max-width: 576px) {
+
+    /* nav-bar section  */
+
+    nav {
+        justify-content: space-between;
+        margin: 0 16px;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+}
+
