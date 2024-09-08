@@ -332,6 +332,13 @@ nav > ul > li > a {
   padding: 16px;
   border-radius: 30px;
   background-image: linear-gradient(#e7f9fd00, #e7f9fd);
+  position: relative;
+}
+
+.react {
+  position: absolute;
+  top: 35px;
+  right: 35px;
 }
 
 .recipe-card-6 {
@@ -380,6 +387,70 @@ nav > ul > li > a {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+/* own kitchen section  */
+
+.kitchen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.kitchen-content p {
+  padding: 14px 0 70px;
+}
+
+.kitchen-content button {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 21px 50px;
+  border: none;
+  border-radius: 16px;
+  background-color: black;
+}
+
+.kitchen-img-1 {
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+}
+
+.kitchen-img-2 {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 70px;
+}
+
+.kitchen-img-3 {
+  position: absolute;
+  top: 0;
+  right: 30%;
+}
+
+.kitchen-img-4 {
+  position: absolute;
+  bottom: 20%;
+  left: -5%;
+}
+
+.kitchen-img-5 {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 70px;
+}
+
+.kitchen-img {
+  width: 651px;
+  height: 500px;
+  border-radius: 30px;
+  position: relative;
+  background-image: linear-gradient(#e7f9fd00, #e7f9fd);
 }
 
 /* Responsive section  */
@@ -513,4 +584,61 @@ nav > ul > li > a {
   .recipe-card-9 {
     height: 400px;
   }
+
+  /* own kitchen section  */
+  
+  .kitchen-content {
+    margin: 0 16px 50px;
+  }
+
+  .kitchen-content h1 {
+    font-size: 36px;
+  }
+
+  .kitchen-content p {
+    padding: 30px 0;
+  }
+
+  .kitchen-container {
+    flex-direction: column-reverse;
+  }
+
+  .kitchen-img {
+    width: 100%;
+    height: 350px;
+    margin: 0 30px;
+  }
+
+  .kitchen-img-1 {
+    width: 100%;
+    margin: 0 30px;
+  }
+
+  .kitchen-img-2,
+  .kitchen-img-3,
+  .kitchen-img-4,
+  .kitchen-img-5 {
+    width: 40px;
+    
+  }
+
+  .kitchen-img-2 {
+    top: 15%;
+  }
+
+  .kitchen-img-3 {
+    top: 10%;
+    right: 20%;
+  }
+
+  .kitchen-img-4 {
+    bottom: 20%;
+    left: 5%;
+  }
+
+  .kitchen-img-5 {
+    top: 40%;
+    right: 5%;
+  }
+
 }
