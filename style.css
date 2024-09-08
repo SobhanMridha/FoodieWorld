@@ -214,6 +214,92 @@ nav > ul > li > a {
   cursor: pointer;
 }
 
+/* categories section  */
+
+.categories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  margin: 0 150px;
+}
+
+.categories-header button {
+  background-color: #e7fafe;
+  border: none;
+  padding: 20px 27px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 16px;
+}
+
+.categories-header button:hover {
+  cursor: pointer;
+}
+
+.categories-card-container {
+  width: fit-content;
+  margin: auto;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 70px 0;
+}
+
+.categories-card-container p {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.categories-card-1,
+.categories-card-2,
+.categories-card-3,
+.categories-card-4,
+.categories-card-5,
+.categories-card-6 {
+  width: 180px;
+  height: 152px;
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+}
+
+.categories-card-1 {
+  background-image: linear-gradient(#70824600, #7082461a);
+}
+
+.categories-card-2 {
+  background-image: linear-gradient(#6cc63f00, #6cc63f1a);
+}
+
+.categories-card-3 {
+  background-image: linear-gradient(#cc261b00, #cc261b1a);
+}
+
+.categories-card-4 {
+  background-image: linear-gradient(#f09e0000, #f09e001a);
+}
+
+.categories-card-5 {
+  background-image: linear-gradient(#00000000, #0000000d);
+}
+
+.categories-card-6 {
+  background-image: linear-gradient(#00000000, #0000000d);
+}
+
+.categories-img {
+  position: relative;
+  top: -40px;
+}
+
+.categories-shadow {
+  position: absolute;
+  top: -40px;
+  left: 20%;
+}
+
 /* Responsive section  */
 
 @media screen and (max-width: 576px) {
@@ -265,7 +351,7 @@ nav > ul > li > a {
   }
 
   .banner-left-content h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
 
   .banner-select {
@@ -282,5 +368,37 @@ nav > ul > li > a {
 
   .banner-btn button {
     padding: 15px;
+  }
+
+  /* categories section  */
+
+  .categories-header {
+    margin: 0;
+  }
+
+  .categories-header h1 {
+    font-size: 36px;
+    margin: auto;
+  }
+
+  .categories-header button {
+    display: none;
+  }
+
+  .categories-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 100px;
+  }
+
+  .categories-card-1,
+  .categories-card-2,
+  .categories-card-3,
+  .categories-card-4,
+  .categories-card-5,
+  .categories-card-6 {
+    width: 165px;
+    /* height: 152px; */
+   
   }
 }
