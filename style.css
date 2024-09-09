@@ -453,6 +453,115 @@ nav > ul > li > a {
   background-image: linear-gradient(#e7f9fd00, #e7f9fd);
 }
 
+/* instagram section  */
+
+.instagram-container {
+  background-image: linear-gradient(#e7f9fd00, #e7f9fd);
+}
+
+.instagram-header {
+  text-align: center;
+}
+
+.instagram-header p {
+  padding: 24px 0 70px;
+}
+
+.instagram-card-container {
+  width: fit-content;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-bottom: 100px;
+}
+
+.instagram-card > img {
+  background-color: white;
+  display: block;
+}
+
+.insta-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 290px;
+  padding: 8px;
+  background-color: white;
+}
+
+.insta-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.insta-info h5 {
+  display: inline;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.insta-info p {
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.insta-card-footer {
+  width: 290px;
+  padding: 8px;
+  background-color: white;
+}
+
+.insta-react {
+  display: flex;
+  align-items: center;
+}
+
+.insta-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  padding-right: 44px;
+}
+
+.slider {
+  padding-right: 107px;
+}
+
+.insta-liked {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3px;
+  padding: 8px 0;
+}
+
+.insta-liked p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.insta-liked span {
+  font-weight: 600;
+}
+
+.insta-card-footer > p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.insta-card-footer > p > span {
+  font-weight: 600;
+}
+
+.insta-card-footer > small {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 8.5px;
+  font-weight: 400;
+}
+
 /* Responsive section  */
 
 @media screen and (max-width: 576px) {
@@ -586,7 +695,7 @@ nav > ul > li > a {
   }
 
   /* own kitchen section  */
-  
+
   .kitchen-content {
     margin: 0 16px 50px;
   }
@@ -601,6 +710,7 @@ nav > ul > li > a {
 
   .kitchen-container {
     flex-direction: column-reverse;
+    margin-bottom: 30px;
   }
 
   .kitchen-img {
@@ -619,7 +729,6 @@ nav > ul > li > a {
   .kitchen-img-4,
   .kitchen-img-5 {
     width: 40px;
-    
   }
 
   .kitchen-img-2 {
@@ -641,4 +750,17 @@ nav > ul > li > a {
     right: 5%;
   }
 
+  /* instgram section  */
+
+   .instagram-header h1 {
+    font-size: 36px;
+   }
+
+   .instagram-header p {
+    margin: 0 16px;
+   }
+
+  .instagram-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
