@@ -16,7 +16,7 @@ body {
 
 .heading {
   color: black;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 600;
 }
 
@@ -604,7 +604,6 @@ nav > ul > li > a {
 
 .delicious-header h2 {
   width: 700px;
-
 }
 
 .delicious-header p {
@@ -633,6 +632,135 @@ nav > ul > li > a {
   font-weight: 600;
   padding: 10px 0 20px;
 }
+
+/* inbox section  */
+
+.inbox-container {
+  text-align: center;
+  padding: 80px 345px;
+  margin: 0 250px;
+  border-radius: 60px;
+  background-color: #e7f9fd;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.inbox-container p {
+  width: 620px;
+  padding: 24px 0 50px;
+  margin: auto;
+}
+
+.inbox-container input {
+  width: 480px;
+  height: 80px;
+  color: #00000066;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 32px;
+  border-radius: 24px;
+  border: none;
+  background-color: white;
+}
+
+.inbox-container button {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 22px 46px;
+  border: none;
+  border-radius: 16px;
+  background-color: black;
+  position: absolute;
+  bottom: 21%;
+  right: 33.5%;
+}
+
+.inbox-container button:hover {
+  cursor: pointer;
+}
+
+.inbox-img-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 0 60px;
+}
+
+.inbox-img-2 {
+  position: absolute;
+  bottom: 20%;
+  right: 19%;
+}
+
+.inbox-img-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 60px 0;
+}
+
+/* footer section  */
+
+.footer-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-header h5 {
+  font-family: Lobster;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer-header p {
+  padding: 20px 0;
+}
+
+.footer-header h5 > span {
+  color: #ff7426;
+}
+
+.footer-header ul {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-header li {
+  list-style: none;
+}
+
+.footer-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-footer {
+  display: flex;
+  justify-content: end;
+  gap: 32%;
+}
+
+.footer-footer > p {
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+  
+.footer-footer > p > span {
+  color: #FF7967;
+}
+
+.footer-social > a {
+  margin-right: 30px;
+}
+
 
 /* Responsive section  */
 
@@ -839,6 +967,10 @@ nav > ul > li > a {
 
   /* delicious section  */
 
+  .delicious-container {
+    margin-bottom: 100px;
+  }
+
   .delicious-header {
     flex-direction: column;
     margin: 50px 16px;
@@ -851,12 +983,80 @@ nav > ul > li > a {
   }
 
   .delicious-header p {
-       width: 100%;
+    width: 100%;
   }
 
   .delicious-card-container {
     grid-template-columns: repeat(1, 1fr);
     margin: auto;
     gap: 50px;
+  }
+
+  /* inbox section  */
+
+  .inbox-container {
+    margin: 0 16px 50px;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .inbox-container h2 {
+    font-size: 24px;
+  }
+
+  .inbox-container p {
+    width: 100%;
+  }
+
+  .inbox-container input {
+    width: 100%;
+    height: 50px;
+  }
+
+  .inbox-container button {
+    position: relative;
+    margin-left: 185px;
+    margin-top: 20px;
+    padding: 20px 32px;
+  }
+
+  .inbox-container img {
+    width: 20%;
+    border-radius: 0;
+  }
+
+  .inbox-img-2 {
+    top: 40%;
+    right: 10%;
+  }
+
+  /* footer section  */
+   
+  .footer-header {
+    flex-direction: column;
+    
+  }
+
+  .footer-header ul {
+    padding-bottom: 30px;
+  }
+
+  .footer-footer {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-footer p {
+    font-size: 14px;
+  }
+
+  .footer-social > a {
+    margin: 0;
+    margin-left: 7px;
+  }
+
+  .footer-social img {
+    height: 20px;
+    gap: 10px;
   }
 }
