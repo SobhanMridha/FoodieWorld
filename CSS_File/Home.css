@@ -968,7 +968,7 @@ nav > ul > li > a {
   /* delicious section  */
 
   .delicious-container {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 
   .delicious-header {
@@ -1015,7 +1015,7 @@ nav > ul > li > a {
 
   .inbox-container button {
     position: relative;
-    margin-left: 185px;
+    margin-left: 200px;
     margin-top: 20px;
     padding: 20px 32px;
   }
