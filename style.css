@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 * {
@@ -457,6 +458,7 @@ nav > ul > li > a {
 
 .instagram-container {
   background-image: linear-gradient(#e7f9fd00, #e7f9fd);
+  padding-bottom: 70px;
 }
 
 .instagram-header {
@@ -474,6 +476,11 @@ nav > ul > li > a {
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   padding-bottom: 100px;
+}
+
+.instagram-card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .instagram-card > img {
@@ -560,6 +567,71 @@ nav > ul > li > a {
   color: rgba(0, 0, 0, 0.4);
   font-size: 8.5px;
   font-weight: 400;
+}
+
+.instagram-container button {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  padding: 20px 28px;
+  border-radius: 16px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: auto;
+}
+
+.instagram-container button:hover {
+  cursor: pointer;
+}
+
+/* delicious section  */
+
+.delicious-container {
+  margin-bottom: 150px;
+}
+
+.delicious-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 30px;
+}
+
+.delicious-header h2 {
+  width: 700px;
+
+}
+
+.delicious-header p {
+  width: 600px;
+  line-height: 30px;
+}
+
+.delicious-card-container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 50px;
+}
+
+.delicious-card {
+  width: 290px;
+}
+
+.delicious-card img {
+  border-radius: 20px;
+}
+
+.delicious-card h5 {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0 20px;
 }
 
 /* Responsive section  */
@@ -752,15 +824,39 @@ nav > ul > li > a {
 
   /* instgram section  */
 
-   .instagram-header h1 {
+  .instagram-header h1 {
     font-size: 36px;
-   }
+  }
 
-   .instagram-header p {
+  .instagram-header p {
     margin: 0 16px;
-   }
+  }
 
   .instagram-card-container {
     grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 50px;
+  }
+
+  /* delicious section  */
+
+  .delicious-header {
+    flex-direction: column;
+    margin: 50px 16px;
+    text-align: center;
+  }
+
+  .delicious-header h2 {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .delicious-header p {
+       width: 100%;
+  }
+
+  .delicious-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    gap: 50px;
   }
 }
