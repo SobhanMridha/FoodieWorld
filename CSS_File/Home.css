@@ -1,79 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-}
-
-/* common parts  */
-
-.heading {
-  color: black;
-  font-size: 48px;
-  font-weight: 600;
-}
-
-.text {
-  color: #00000099;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-/* nav-bar section  */
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px 0;
-}
-
-nav > h3 {
-  color: black;
-  font-size: 24px;
-  font-weight: 400;
-  font-family: Lobster;
-}
-
-nav > h3 > span {
-  color: #ff7426;
-}
-
-nav > ul {
-  display: flex;
-  gap: 60px;
-}
-
-nav > ul > li {
-  list-style: none;
-}
-
-nav > ul > li > a {
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.nav-social {
-  display: flex;
-  gap: 30px;
-}
-
-/* ------------- */
-
-.hr {
-  width: 100%;
-  margin-bottom: 40px;
-  border: 0.1px solid #0000001a;
-}
 
 /* banner section  */
 
@@ -207,24 +131,6 @@ nav > ul > li > a {
   background-color: #0000000d;
 }
 
-.banner-person {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.banner-person-details h5 {
-  color: black;
-  font-size: 16px;
-  font-weight: 700;
-  padding-bottom: 8px;
-}
-
-.banner-person-details p {
-  color: #00000099;
-  font-size: 14px;
-  font-weight: 500;
-}
 
 .banner-last-content {
   display: flex;
@@ -734,80 +640,11 @@ nav > ul > li > a {
   border-radius: 0 0 60px 0;
 }
 
-/* footer section  */
 
-.footer-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer-header h5 {
-  font-family: Lobster;
-  color: black;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.footer-header p {
-  padding: 20px 0;
-}
-
-.footer-header h5 > span {
-  color: #ff7426;
-}
-
-.footer-header ul {
-  color: black;
-  font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  gap: 30px;
-}
-
-.footer-header li {
-  list-style: none;
-}
-
-.footer-header a {
-  color: black;
-  text-decoration: none;
-}
-
-.footer-footer {
-  display: flex;
-  justify-content: end;
-  gap: 32%;
-}
-
-.footer-footer > p {
-  width: fit-content;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.footer-footer > p > span {
-  color: #ff7967;
-}
-
-.footer-social > a {
-  margin-right: 30px;
-}
 
 /* Responsive section  */
 
 @media screen and (max-width: 576px) {
-  /* nav-bar section  */
-
-  nav {
-    justify-content: space-between;
-    margin: 0 16px;
-  }
-
-  nav > ul {
-    display: none;
-  }
 
   /* banner section  */
   .banner-container {
@@ -1076,32 +913,5 @@ nav > ul > li > a {
     right: 10%;
   }
 
-  /* footer section  */
-
-  .footer-header {
-    flex-direction: column;
-  }
-
-  .footer-header ul {
-    padding-bottom: 30px;
-  }
-
-  .footer-footer {
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .footer-footer p {
-    font-size: 14px;
-  }
-
-  .footer-social > a {
-    margin: 0;
-    margin-left: 7px;
-  }
-
-  .footer-social img {
-    height: 20px;
-    gap: 10px;
-  }
+  
 }
