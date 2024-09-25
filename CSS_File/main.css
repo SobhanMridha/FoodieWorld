@@ -255,6 +255,55 @@ nav > ul > li > a {
   border-radius: 0 0 60px 0;
 }
 
+/* delicious card container section  */
+
+.delicious-card-container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 50px;
+}
+
+.delicious-card {
+  width: 290px;
+}
+
+.delicious-card img {
+  border-radius: 20px;
+}
+
+.delicious-card h5 {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0 20px;
+}
+
+
+/* recipe flex  */
+.recipe-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+.recipe-time,
+.recipe-eat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+
 /* Responsive section  */
 
 @media screen and (max-width: 576px) {
@@ -335,4 +384,15 @@ nav > ul > li > a {
     top: 40%;
     right: 10%;
   }
+  
+  /* delicious card container section  */
+
+  .delicious-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    gap: 50px;
+  }
+
+
+
 }

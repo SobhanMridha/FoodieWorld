@@ -293,20 +293,6 @@
   border-radius: 24px;
 }
 
-.recipe-content {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 30px;
-}
-
-.recipe-time,
-.recipe-eat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
 
 /* own kitchen section  */
 
@@ -528,29 +514,6 @@
   width: 600px;
   line-height: 30px;
 }
-
-.delicious-card-container {
-  width: fit-content;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: auto;
-  gap: 50px;
-}
-
-.delicious-card {
-  width: 290px;
-}
-
-.delicious-card img {
-  border-radius: 20px;
-}
-
-.delicious-card h5 {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px 0 20px;
-}
-
 
 
 
@@ -781,13 +744,5 @@
     width: 100%;
   }
 
-  .delicious-card-container {
-    grid-template-columns: repeat(1, 1fr);
-    margin: auto;
-    gap: 50px;
-  }
 
-  
-
-  
 }
