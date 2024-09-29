@@ -71,6 +71,36 @@
   border: 1px solid #0000001a;
 }
 
+/* pagination section */
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.pagination-card-1,
+.pagination-card-2,
+.pagination-card-3,
+.pagination-card-4,
+.pagination-card-5,
+.pagination-card-6,
+.pagination-card-7 {
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 26px;
+  border-radius: 16px;
+  border: 1px solid #0000001a;
+  cursor: pointer;
+}
+
+.pagination-card-1 {
+  color: white;
+  background-color: black;
+}
+
 /* Resonsive section  */
 
 @media screen and (max-width: 576px) {
@@ -119,5 +149,30 @@
 
   .fav-recipe-person {
     gap: 20px;
+  }
+
+  /* pagination section */
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .pagination-card-1,
+  .pagination-card-2,
+  .pagination-card-3,
+  .pagination-card-4,
+  .pagination-card-5,
+  .pagination-card-6,
+  .pagination-card-7 {
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid #0000001a;
+    cursor: pointer;
   }
 }
