@@ -1,0 +1,46 @@
+/* blog and acticle section  */
+
+.blog-container h1 {
+  font-size: 64px;
+  text-align: center;
+}
+
+.blog-container p {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.inbox-container {
+  background-color: white;
+}
+
+.inbox-container input {
+  border: 1px solid #0000001a;
+  width: 700px;
+}
+
+.inbox-container button {
+  bottom: 37%;
+  right: 26%;
+}
+
+@media screen and (max-width: 576px) {
+  /* blog and article section  */
+
+  .blog-container h1 {
+    font-size: 48px;
+   
+  }
+
+  .blog-container p {
+    margin: 0 16px;
+  }
+
+  .inbox-container input {
+    width: 100%;
+  }
+
+  .inbox-container button {
+    right: 35%;
+  }
+}
